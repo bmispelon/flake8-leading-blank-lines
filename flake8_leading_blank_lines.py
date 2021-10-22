@@ -1,6 +1,6 @@
 import token
 
-__version__ = '1.0.3'
+__version__ = '1.0.4'
 
 
 def plugin(tree, file_tokens):
@@ -12,7 +12,7 @@ def plugin(tree, file_tokens):
         yield (
             first.start[0],
             first.start[1],
-            'LBL001: Blank line at start of file',
+            'LBL001 blank line at start of file',
             None
         )
 
